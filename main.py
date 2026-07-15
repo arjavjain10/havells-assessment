@@ -25,6 +25,9 @@ import csv
 import json
 import argparse
 
+from dotenv import load_dotenv
+load_dotenv()  # read .env into os.environ
+
 sys.path.insert(0, os.path.dirname(__file__))
 from agents.extraction_agent import extract
 from agents.aggregation_agent import aggregate
